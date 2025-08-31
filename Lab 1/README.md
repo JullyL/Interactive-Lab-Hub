@@ -210,8 +210,7 @@ This was our first attempt at setting up Tinkerbelle in class: https://youtu.be/
 
 Finding ways to hide the phone using different costumes
 
-![Wizard the device](Images/Tinkerbelle%20on%20Apple%20Watch)
-![Wizard the device](Images/Tinkerbelle%20on%20Apple%20Watch%202)
+
 
 Try to run the Tinkerbelle on Apple Watch SE
 
