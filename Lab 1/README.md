@@ -202,8 +202,7 @@ Take a little time to set up the wizarding set-up that allows for someone to rem
 
 \*\***Include your first attempts at recording the set-up video here.**\*\*
 
-
-
+This was our first attempt at setting up Tinkerbelle in class: https://youtu.be/k2fl0RyPIjQ
 
 \*\***Show the follow-up work here.**\*\*
 
