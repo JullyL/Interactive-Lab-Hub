@@ -206,6 +206,13 @@ This was our first attempt at setting up Tinkerbelle in class: https://youtu.be/
 
 \*\***Show the follow-up work here.**\*\*
 
+![Wizard the device](Images/Wizardthedevice.JPG)
+
+Finding ways to hide the phone using different costumes
+
+![Wizard the device]()
+
+Try to run the Tinkerbelle on Apple Watch SE
 
 ## Part E. Costume the device
 
