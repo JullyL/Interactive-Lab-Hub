@@ -20,7 +20,7 @@ F) [Record the interaction](#part-f-record)
 Labs are due on Mondays. Make sure this page is linked to on your main class hub page.
 
 ## Part A. Plan 
-![Storyboard of Secenario 1]()
+![Storyboard of Secenario 1](Lab%201/Sketch#1.jpg)
 
 
 
