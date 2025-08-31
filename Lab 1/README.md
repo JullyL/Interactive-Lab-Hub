@@ -206,33 +206,65 @@ This was our first attempt at setting up Tinkerbelle in class: https://youtu.be/
 
 \*\***Show the follow-up work here.**\*\*
 
+Setup Tinkerbelle on Apple Watch SE for smaller Display
+- Send the URL link via SNS: ![Apple Watch Set Up](Images/Tinkerbelle_on_Apple_Watch.jpg)
+- Open in the browser: ![Apple Watch Set Up](Images/Tinkerbelle_on_Apple_Watch_2.jpg)
+
+Finding ways to wizard under constume
 ![Wizard the device](Images/Wizardthedevice.JPG)
 
-Finding ways to hide the phone using different costumes
-
-
-
-Try to run the Tinkerbelle on Apple Watch SE
 
 ## Part E. Costume the device
 
-Only now should you start worrying about what the device should look like. Develop three costumes so that you can use your phone as this device.
-
-Think about the setting of the device: is the environment a place where the device could overheat? Is water a danger? Does it need to have bright colors in an emergency setting?
-
 \*\***Include sketches of what your devices might look like here.**\*\*
 
+**Device 1: Temperature detection Bottle**
+![Sketch 1](Images/Sketch1.jpg)
+
+**Device 2: Amount Detection Bottle**
+![Sketch 2](Images/Sketch2.jpg)
+
+**Device 3: Bottle detects type of liquid**
+![Sketch 3](Images/Sketch3.jpg)
+
+
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
+
+**Device #1: Tea cup detects temperature**
+
+Because the cup interacts with boiling water, clear and intuitive visual cues are essential. We chose a bold, easily distinguishable color palette (red for “too hot,” green/blue for “safe”) to ensure users can quickly gauge temperature, even at a glance.
+At the same time, we saw an opportunity to make the light cues work passively, so users don’t have to hover nearby. This informed choices like persistent indicators and potential sound/phone notifications
+In addition, we need to consider safety concerns such as potential water spills near the light source. To prevent damage, the lighting component should be fully waterproof.
+
+**Device #2: Amount in the bottle**
+
+For non-intrusive notifications, we consolidated the glowing part of the water bottle to a small square near the top of the bottle, allowing the water bottle to be used in public places such as libraries, classrooms, and offices. 
+A simple color palette of white, blue, and orange is used so users can easily recognize and respond to the signals. In addition orange is easily connected to alerts and warnings, catching users’ attention to the fact they should take a drink. 
+As it is a water bottle, the lighting component should be water proof. The glowing part should be scratch and shatter resistant as water bottles often get manhandled and dropped. 
+
+**Device #3: Type of liquid**
+
+We chose simple, intuitive colors for healthy and unhealthy liquids. Red is used for unhealthy liquids indicating that the user may want to pause and think about their drink choice. Green is used for healthy liquids allowing users to go ahead and be confident in their drink choice. 
+We make a large portion of the water bottle light up to better facilitate a social element to the notifications that may push the user or those around them to make a different drink choice. 
+The lighting component should be fully waterproof. By putting it in the bottom, it allows us to better protect and seal the lighting component from damage. 
 
 
 ## Part F. Record
 
 \*\***Take a video of your prototyped interaction.**\*\*
 
+**Device 1:** https://youtube.com/shorts/qB83ggXfV4w?feature=share
+
+**Device 2:** https://youtube.com/shorts/ElU2wwy-GhY?feature=share
+
+**Device 3:** https://youtube.com/shorts/VocA4ZCp-8Q?feature=share
+
+
 \*\***Please indicate who you collaborated with on this Lab.**\*\*
-Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
 
-
+Our whole group brainstormed together to create all the storyboards. I made all the sketches based on our ideas afterwards.
+For the setup, wizard, and prototyping phases, Sirui and I filmed the videos, and Amy
+narrated them. This was truly a collaborative effort from everyone on the team!
 
 # Staging Interaction, Part 2 
 
