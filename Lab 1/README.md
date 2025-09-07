@@ -352,7 +352,7 @@ We tested our code with the song **"Like Jennie" -- Jennie Kim**. See Video:
 
 ### Costume the device
 Here is our sketch of the **Smart Mat x Bottle**
-![Sketch of Smart Bottle × Yoga Mat](Images/lab1b_sketch.png)  
+![Sketch of Smart Bottle × Yoga Mat](Images/lab1b_Sketch.ipg)  
 
 In the first part of the lab, we focused on the **water bottle** itself. Since bottles are objects users already carry everywhere, we kept its form familiar with only subtle enhancements. A **glowing light ring** was chosen as the main signal, which should be ambient and noticeable without being disruptive.  
 
