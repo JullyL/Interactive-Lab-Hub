@@ -368,4 +368,10 @@ We then refined the mat to act as an **active interface**:
 - Concluding each session with a calm countdown sound from the bottle ⏱️  
 
 ### Record -- Videos of Prototyped Interaction
-
+Prototyped interaction of the Smart Mat × Bottle:
+https://youtu.be/y5ejHxZTvZc
+- Actress: Jully Li
+- Director: Sirui Wang
+- Narrative: Amy Chen
+  
+This whole lab was a true team effort in bringing everything together!
