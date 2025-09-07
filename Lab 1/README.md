@@ -347,7 +347,10 @@ We tested our code with the song **"Like Jennie" -- Jennie Kim**. See Video: [ht
 ### Costume the device
 Bottle Costume
 <p align="center">
-  <img src="Images/lab1b_bottle.jpg" alt="Bottle Costume" width="600"/>
+  <img src="Images/lab1b_costume1.jpg" alt="Bottle Costume" width="600"/>
+</p>  
+<p align="center">
+  <img src="Images/lab1b_costume2.jpg" alt="Bottle Costume" width="600"/>
 </p>  
 
 Here is our sketch of the **Smart Mat x Bottle**
