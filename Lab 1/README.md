@@ -345,13 +345,12 @@ Here is our revised code (replaced with the original index.html file): https://g
 We tested our code with the song **"Like Jennie" -- Jennie Kim**. See Video: [https://youtube.com/shorts/QXdqfbwx3e8?feature=share](https://youtube.com/shorts/OwFWqQ4Drp0)
 
 ### Costume the device
-Bottle Costume
+
+**Bottle Costume**
 <p align="center">
-  <img src="Images/lab1b_costume1.jpg" alt="Bottle Costume" width="600"/>
-</p>  
-<p align="center">
-  <img src="Images/lab1b_costume2.jpg" alt="Bottle Costume" width="600"/>
-</p>  
+  <img src="Images/lab1b_costume1.jpg" alt="Bottle Costume" width="400"/>
+  <img src="Images/lab1b_costume2.jpg" alt="Bottle Costume" width="400"/>
+</p>
 
 Here is our sketch of the **Smart Mat x Bottle**
 <p align="center">
