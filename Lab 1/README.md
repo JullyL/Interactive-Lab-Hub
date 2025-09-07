@@ -348,7 +348,7 @@ We modified the Tinkerbelle code to realize the audio-reactive feature. We used 
 
 Here is our revised code (replaced with the original index.html file): https://github.com/siruiii/Interactive-Lab-Hub/blob/Fall2025/Lab%201/index.html
 
-We tested our code with the song **"Like Jennie" -- Jennie Kim**. See Video:
+We tested our code with the song **"Like Jennie" -- Jennie Kim**. See Video: https://youtube.com/shorts/QXdqfbwx3e8?feature=share
 
 ### Costume the device
 Here is our sketch of the **Smart Mat x Bottle**
