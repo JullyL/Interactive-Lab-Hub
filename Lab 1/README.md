@@ -324,14 +324,21 @@ The user is reminded to start their workout session when the bottle begins to gl
 We then brainstormed **three scenarios** that extended the bottle’s original lighting function while adding **vibration** and **sound** features to enrich the interaction.  
 
 ### Storyboards
-#### Scenario 1: Remind people their daily fitness routine
-![Storyboard1 of Smart Bottle × Yoga Mat](Images/lab1b_storyboard1.png)  
+#### Scenario 1: Remind people of their daily fitness routine  
+<p align="center">
+  <img src="Images/lab1b_storyboard1.png" alt="Storyboard1 of Smart Bottle × Yoga Mat" width="600"/>
+</p>  
 
-#### Scenario 2: Glow with the music rhythm.
-![Storyboard2 of Smart Bottle × Yoga Mat](Images/lab1b_storyboard2.png)  
+#### Scenario 2: Glow with the music rhythm  
+<p align="center">
+  <img src="Images/lab1b_storyboard2.png" alt="Storyboard2 of Smart Bottle × Yoga Mat" width="600"/>
+</p>  
 
-#### Scenario 3: Count down with vibration to end the yoga session.
-![Storyboard3 of Smart Bottle × Yoga Mat](Images/lab1b_storyboard3.png)  
+#### Scenario 3: Count down with vibration to end the yoga session  
+<p align="center">
+  <img src="Images/lab1b_storyboard3.png" alt="Storyboard3 of Smart Bottle × Yoga Mat" width="600"/>
+</p>  
+
 
 ### Wizard the device
 
