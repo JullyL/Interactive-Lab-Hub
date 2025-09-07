@@ -348,13 +348,19 @@ We modified the Tinkerbelle code to realize the audio-reactive feature. We used 
 
 Here is our revised code (replaced with the original index.html file): https://github.com/siruiii/Interactive-Lab-Hub/blob/Fall2025/Lab%201/index.html
 
-We tested our code with the song **"Like Jennie" -- Jennie Kim**. See Video: https://youtube.com/shorts/QXdqfbwx3e8?feature=share
+We tested our code with the song **"Like Jennie" -- Jennie Kim**. See Video: [https://youtube.com/shorts/QXdqfbwx3e8?feature=share](https://youtube.com/shorts/OwFWqQ4Drp0)
 
 ### Costume the device
+Bottle Costume
+<p align="center">
+  <img src="Images/lab1b_bottle.jpg" alt="Bottle Costume" width="600"/>
+</p>  
+
 Here is our sketch of the **Smart Mat x Bottle**
 <p align="center">
   <img src="Images/lab1b_Sketch.jpg" alt="Sketch of Smart Bottle × Yoga Mat" width="600"/>
 </p>  
+
 
 In the first part of the lab, we focused on the **water bottle** itself. Since bottles are objects users already carry everywhere, we kept its form familiar with only subtle enhancements. A **glowing light ring** was chosen as the main signal, which should be ambient and noticeable without being disruptive.  
 
