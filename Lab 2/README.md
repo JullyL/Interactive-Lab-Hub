@@ -150,6 +150,22 @@ You can type the name of a color then press either of the buttons on the MiniPiT
 ```
 (venv) pi@raspberrypi:~/Interactive-Lab-Hub/Lab 2 $ cat screen_test.py
 ```
+I entered **Red** as the selected color
+
+Default Screen
+<p align="center">
+  <img src="./Lab-Photos/Green.jpg" alt="Green Display" width="400"/>
+</p>
+
+Pressed A
+<p align="center">
+  <img src="./Lab-Photos/White-A-pressed.jpg" alt="White Display" width="400"/>
+</p>
+
+Pressed B
+<p align="center">
+  <img src="./Lab-Photos/red-color.jpg" alt="Red Display" width="400"/>
+</p>
 
 #### Displaying Info with Texts
 You can look in `screen_boot_script.py` for how to display text on the screen!
@@ -158,11 +174,23 @@ You can look in `screen_boot_script.py` for how to display text on the screen!
 
 You can look in `image.py` for an example of how to display an image on the screen. Can you make it switch to another image when you push one of the buttons?
 
+I modified [image.py](./image.py) so that **Button A** can be used to switch between photos of **Cornell Tech Logo** (image1) and **Campus** (image2).
 
+<p align="center">
+  <img src="./red.jpg" alt="Red Display" width="400"/>
+  <img src="./ct.jpg" alt="CT Display" width="400"/>
+</p>
+
+<p align="center">
+  <a href="https://youtube.com/watch?v=ZEkznvc__eo" target="_blank">
+    <img src="https://img.youtube.com/vi/ZEkznvc__eo/0.jpg" alt="Switch Between Images" width="600"/>
+  </a>
+</p>
 
 ## Part D. 
 ### Set up the Display Clock Demo
 Work on `screen_clock.py`, try to show the time by filling in the while loop (at the bottom of the script where we noted "TODO" for you). You can use the code in `cli_clock.py` and `stats.py` to figure this out.
+
 
 ### How to Edit Scripts on Pi
 Option 1. One of the ways for you to edit scripts on Pi through terminal is using [`nano`](https://linuxize.com/post/how-to-use-nano-text-editor/) command. You can go into the `screen_clock.py` by typing the follow command line:
@@ -183,6 +211,19 @@ Now you should be able to edit python scripts with Thonny on your Pi.
 Option 3. A nowadays often preferred method is to use Microsoft [VS code to remote connect to the Pi](https://www.raspberrypi.com/news/coding-on-raspberry-pi-remotely-with-visual-studio-code/). This gives you access to a fullly equipped and responsive code editor with terminal and file browser.  
 
 Pro Tip: Using tools like [code-server](https://coder.com/docs/code-server/latest) you can even setup a VS Code coding environment hosted on your raspberry pi and code through a web browser on your tablet or smartphone! 
+
+### Workflow
+Based on `cli_clock.py` and `stats.py`, I modified [screen_clock.py](./screen_clock.py) to display the time on Rpi screen:
+- Updated the text position to center of the screen (See [screen_clock.py](./screen_clock.py) for more details )
+- Updated the text font (See [screen_clock.py](./screen_clock.py) for more details )
+
+<p align="center">
+  <a href="https://youtube.com/watch?v=07hUw9v8i_Q" target="_blank">
+    <img src="https://img.youtube.com/vi/07hUw9v8i_Q/0.jpg" alt="Watch demo video" width="600"/>
+  </a>
+</p>
+
+
 
 ## Part E. Now moved to Lab2 Part 2.
 
