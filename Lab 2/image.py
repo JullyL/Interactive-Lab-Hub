@@ -10,7 +10,7 @@ not support PIL/pillow (python imaging library)!
 
 Author(s): Melissa LeBlanc-Williams for Adafruit Industries
 """
-
+import time
 import digitalio
 import board
 from PIL import Image, ImageDraw
@@ -24,7 +24,7 @@ import adafruit_rgb_display.ssd1331 as ssd1331  # pylint: disable=unused-import
 # Configuration for CS and DC pins (these are PiTFT defaults):
 cs_pin = digitalio.DigitalInOut(board.D5)
 dc_pin = digitalio.DigitalInOut(board.D25)
-reset_pin = digitalio.DigitalInOut(board.D24)
+reset_pin = None
 
 # Config for display baudrate (default max is 24mhz):
 BAUDRATE = 24000000
@@ -74,28 +74,58 @@ draw = ImageDraw.Draw(image)
 draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
 disp.image(image)
 
-image = Image.open("red.jpg")
+# BackLight on
 backlight = digitalio.DigitalInOut(board.D22)
 backlight.switch_to_output()
 backlight.value = True
 
+# images
+images = ["red.jpg", "ct.jpg"]  # [logo, campus]
+processed = []  # store the fitted PIL Images
 
-# Scale the image to the smaller screen dimension
-image_ratio = image.width / image.height
-screen_ratio = width / height
-if screen_ratio < image_ratio:
-    scaled_width = image.width * height // image.height
-    scaled_height = height
-else:
-    scaled_width = width
-    scaled_height = image.height * width // image.width
-image = image.resize((scaled_width, scaled_height), Image.BICUBIC)
+for fname in images:
+    image = Image.open(fname).convert("RGB")
+    image_ratio = image.width / image.height
+    screen_ratio = width / height
 
-# Crop and center the image
-x = scaled_width // 2 - width // 2
-y = scaled_height // 2 - height // 2
-image = image.crop((x, y, x + width, y + height))
+    if screen_ratio < image_ratio:
+        scaled_width = image.width * height // image.height
+        scaled_height = height
+    else:
+        scaled_width = width
+        scaled_height = image.height * width // image.width
 
-# Display image.
-disp.image(image)
+    image = image.resize((scaled_width, scaled_height), Image.BICUBIC)
+    x = scaled_width // 2 - width // 2
+    y = scaled_height // 2 - height // 2
+    fitted = image.crop((x, y, x + width, y + height))
 
+    processed.append(fitted)
+
+# unpack
+logo_img, campus_img = processed
+
+# display default
+disp.image(logo_img)
+
+# buttons
+buttonA = digitalio.DigitalInOut(board.D23)    # GPIO23 (PIN 16)
+buttonB = digitalio.DigitalInOut(board.D24)  # next
+# Use internal pull-ups; buttons then read LOW when pressed.
+buttonA.switch_to_input(pull=digitalio.Pull.UP)
+buttonB.switch_to_input(pull=digitalio.Pull.UP)
+
+print("Hold A to show Campus; release to show Logo")
+prev_state = None
+
+while True:
+    a_pressed = (buttonA.value == False)  # active-LOW
+
+    if a_pressed != prev_state:
+        if a_pressed:
+            disp.image(campus_img)
+        else:
+            disp.image(logo_img)
+        prev_state = a_pressed
+
+    time.sleep(0.03)
