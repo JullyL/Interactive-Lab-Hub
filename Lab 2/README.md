@@ -1,5 +1,5 @@
 # Interactive Prototyping: The Clock of Pi
-**Jully Li**
+**Jully Li, Sirui Wang**
 
 Does it feel like time is moving strangely during this semester?
 
@@ -231,7 +231,18 @@ Based on `cli_clock.py` and `stats.py`, I modified [screen_clock.py](./screen_cl
 
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
+### Time of Vinyl
+The concept explores the intersection of time and music, using songs as a living clock. Many songs feature numbers in their titles or lyrics, and we imagine turning those numbers into **markers of time**.
 
+Every minute, a song's lyrics that contains the corresponding number is highlighted on the vinyl player. For example, at 08:23, the system brings up Sam Hunt’s song, showing the lyrics containing "23". During that minute, users can choose to play the track; once the minute passes, the system automatically switches to the next featured song matching the new time.
+
+To give users flexibility, the clock offers two modes:
+- **Play Mode** — the music for the current minute plays (Sound Output).
+- **Pause Mode** — the clock advances silently, simply showcasing the featured track.
+
+<p align="center">
+  <img src="./Lab-Photos/sketch.jpg" alt="Music of Time" width="800"/>
+</p>
 
 # Prep for Part 2
 
