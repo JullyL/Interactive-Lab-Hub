@@ -274,17 +274,17 @@ Time is measured through multimedia experiences; each hour has its own soundtrac
 ### Core Functionality
 The system maintains a current_index variable (1-12) that determines which image will be set to display. Each index corresponds to both a visual theme and an associated audio file. The display automatically switches between two image states:
 - Inactive state, Pause Mode (0-X.png): Shown when no audio is playing
-![0-1-12](proj_docs/0-1-12.png)
+![0-1-12](Lab-Photos/0-1-12.png)
 
 - Active state, Play Mode (1-X.png): Shown when audio is currently playing
-![1-1-12](proj_docs/1-1-12.png)
+![1-1-12](Lab-Photos/1-1-12.png)
 
 *Design File:* https://www.figma.com/design/S7R1f6ORhcNgwyc6eABZxy/Vinyl-of-Time?node-id=0-1&t=3ef37x75LoWWQIjh-1
 
 ### User Interaction
 The button toggles audio playback for the current hour, which triggers the visual state change between inactive (Paused Mode) and active (Play Mode) images.
 
-<img src="proj_docs/clock_test.jpg" alt="skech" width="600"/>
+<img src="Lab-Photos/clock_test.jpg" alt="skech" width="600"/>
 
 ### Display Updates
 - Requires importing the font: https://github.com/siruiii/Interactive-Lab-Hub/blob/f06c9da3bbf9ca44472ff6efc58b310894025726/Lab%202/proj_docs/Abel-Regular.ttf
