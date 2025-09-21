@@ -1,5 +1,5 @@
 # Interactive Prototyping: The Clock of Pi
-**Jully Li, Sirui Wang**
+**Jully Li (hl2569), Sirui Wang (sw2449), Wendy Hong (wh528), Sophie Su (fs495)**
 
 Does it feel like time is moving strangely during this semester?
 
@@ -265,7 +265,51 @@ Please sketch/diagram your clock idea. (Try using a [Verplank digram](http://www
 **We strongly discourage and will reject the results of literal digital or analog clock display.**
 
 
-\*\*\***A copy of your code should be in your Lab 2 Github repo.**\*\*\*
+### Reflection & Interaction
+In our original concept (see Part G sketch), each track on the vinyl was designed to sync with the exact minute of the time (1–60 mins). However, when we moved into implementation, we realized that aligning songs at the minute level was technically challenging and not always practical for user experience. To preserve the essence of the design while ensuring feasibility, we pivoted to syncing the soundtrack with the hour instead, allowing each hour to have its own featured track, like a rotating record side that changes over time.
+
+### Clock Description
+Time is measured through multimedia experiences; each hour has its own soundtrack and visual theme, making time about feeling rather than counting. The clock displays the corresponding images based on the current hour. The minute and second updates are overlaid as text on top of the selected image, showing the real time.
+
+### Core Functionality
+The system maintains a current_index variable (1-12) that determines which image will be set to display. Each index corresponds to both a visual theme and an associated audio file. The display automatically switches between two image states:
+- Inactive state, Pause Mode (0-X.png): Shown when no audio is playing
+![0-1-12](proj_docs/0-1-12.png)
+
+- Active state, Play Mode (1-X.png): Shown when audio is currently playing
+![1-1-12](proj_docs/1-1-12.png)
+
+*Design File:* https://www.figma.com/design/S7R1f6ORhcNgwyc6eABZxy/Vinyl-of-Time?node-id=0-1&t=3ef37x75LoWWQIjh-1
+
+### User Interaction
+The button toggles audio playback for the current hour, which triggers the visual state change between inactive (Paused Mode) and active (Play Mode) images.
+
+<img src="proj_docs/clock_test.jpg" alt="skech" width="600"/>
+
+### Display Updates
+- Requires importing the font: https://github.com/siruiii/Interactive-Lab-Hub/blob/f06c9da3bbf9ca44472ff6efc58b310894025726/Lab%202/proj_docs/Abel-Regular.ttf
+
+The `update_display()` function continuously refreshes the screen by:
+1. Selecting the appropriate background image based on current hour and audio state
+2. Drawing the current time (minutes and seconds) as black text overlay
+3. Rendering the final composite image to the display
+
+### Audio Integration
+- Requires `pip install pygame` to enable audio playback functionality and connecting the Raspberry Pi to a Bluetooth speaker for sound output.
+- Each of the 12 hours has a corresponding MP3 file that plays when activated. The pygame mixer handles audio playback while the system monitors playback status to determine which visual state to display. 
+
+### Implementation
+*Here is the source code:*
+`clock.py`: https://github.com/siruiii/Interactive-Lab-Hub/blob/f06c9da3bbf9ca44472ff6efc58b310894025726/Lab%202/clock.py
+
+*Resources:*
+- Images inside `clock_img` folder
+- Audio files inside `clock_audio` folder
+
+*Run this command in terminal:*
+```bash
+python clock.py
+```
 
 
 ## Assignment that was formerly Part F. 
@@ -292,4 +336,16 @@ As always, make sure you document contributions and ideas from others explicitly
 
 You are permitted (but not required) to work in groups and share a turn in; you are expected to make equal contribution on any group work you do, and N people's group project should look like N times the work of a single person's lab. What each person did should be explicitly documented. Make sure the page for the group turn in is linked to your Interactive Lab Hub page. 
 
+### Button Interaction
+Press the button to play or pause the vinyl: https://youtube.com/shorts/TOd6y0HH4oE?feature=share
 
+### Final Deliverable: Vinyl of Time
+https://youtu.be/PXgz67Ic3is?feature=shared 
+
+### Contribution
+Everyone on the team made equal contributions. 
+
+- *Feier Su (fs495)*: Help with UI implementation, video recording & editing  
+- *Weicong Hong (wh528)*: UI, audio file preparation, video recording & editing 
+- *Jully Li (hl2568)*: Design of the user interface, sketch
+- *Sirui Wang (sw2449)*: technical implementation, writing documentation
