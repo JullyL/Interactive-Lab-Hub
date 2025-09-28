@@ -325,8 +325,8 @@ Device: Nailed it in 7 questions! Want a rematch?
 
 **How we act out the dialogue:**
 <p align="center">
-  <a href="https://youtu.be/QrIJ1dEAK-s" target="_blank">
-    <img src="https://img.youtube.com/vi/QrIJ1dEAK-s/hqdefault.jpg" alt="Acting Out the Dialogue" width="600"/>
+  <a href="https://youtu.be/93-dGnLfw1I" target="_blank">
+    <img src="https://img.youtube.com/vi/93-dGnLfw1I/hqdefault.jpg" alt="Acting Out the Dialogue" width="600"/>
   </a>
 </p>
 
