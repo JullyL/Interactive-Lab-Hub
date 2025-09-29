@@ -80,7 +80,9 @@ Typically, a `.sh` file is a shell script which you can execute in a terminal. T
 You can also play audio files directly with `aplay filename`. Try typing `aplay lookdave.wav`.
 
 \*\***Write your own shell file to use your favorite of these TTS engines to have your Pi greet you by name.**\*\*
-(This shell file should be saved to your own repo for this lab.)
+
+Here is the shell file:
+https://github.com/JullyL/Interactive-Lab-Hub/blob/Fall2025/Lab%203/speech-scripts/name_demo.sh
 
 ---
 Bonus:
@@ -146,6 +148,10 @@ and
 python faster_whisper_try.py
 ```
 \*\***Write your own shell file that verbally asks for a numerical based input (such as a phone number, zipcode, number of pets, etc) and records the answer the respondent provides.**\*\*
+
+For this exercise, I prompted WendyTA to help me complete this together.
+See the shell file (https://github.com/JullyL/Interactive-Lab-Hub/blob/Fall2025/Lab%203/speech-scripts/number_prompt.sh) and its README.MD (https://github.com/JullyL/Interactive-Lab-Hub/blob/Fall2025/Lab%203/speech-scripts/README.md) created. The recordings folder (https://github.com/JullyL/Interactive-Lab-Hub/tree/Fall2025/Lab%203/speech-scripts/recordings).
+
 
 ### 🤖 NEW: AI-Powered Conversations with Ollama
 
@@ -213,6 +219,32 @@ answer = ask_ai("How should I greet users?")
 **📖 Complete Setup Guide**: See `OLLAMA_SETUP.md` for detailed instructions, troubleshooting, and advanced usage!
 
 \*\***Try creating a simple voice interaction that combines speech recognition, Ollama processing, and text-to-speech output. Document what you built and how users responded to it.**\*\*
+
+Testing with the web app
+```bash
+export PYTHONIOENCODING=utf-8
+python3 ollama_web_app.py
+```
+![web-app-test](lab_photos/web-app-test.png)
+
+### Serving Pages
+
+In Lab 1, we served a webpage with flask. In this lab, you may find it useful to serve a webpage for the controller on a remote device. Here is a simple example of a webserver.
+
+```
+pi@ixe00:~/Interactive-Lab-Hub/Lab 3 $ python server.py
+ * Serving Flask app "server" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 162-573-883
+```
+From a remote browser on the same network, check to make sure your webserver is working by going to `http://<YourPiIPAddress>:5000`. You should be able to see "Hello World" on the webpage.
+
 
 ### Serving Pages
 
@@ -330,6 +362,7 @@ Device: Nailed it in 7 questions! Want a rematch?
   </a>
 </p>
 
+
 **Feedback:**
 
 Back-to-back yes or no questions worked, but without a visual/progress cue, the user couldn’t tell how far along we were (How many questions the device had asked), this felt more noticeable when spoken. In Part B, we could think about how to add a quick mid-game recap after Q4–5 (“So far: real, alive, musician, not British…” or “So far, I had asked 4 questions…”) to ground the user.
@@ -346,6 +379,15 @@ We used the following prompt to interact with the Ollama Voice Assistant in orde
 You are a Twenty Questions bot: the user silently thinks of a person, answers only “yes” or “no,” and you ask up to 20 concise, polite, speakable questions (one question at a time) that start broad and then narrow based on their answers to identify the person within the limit (you win if you guess correctly within 20; otherwise the user wins).
 
 **How we interact with Ollama:**
+
+Source code: https://github.com/siruiii/Interactive-Lab-Hub/blob/f60a190fbbe2c7a8e6154d53bfbb73955c6a41fb/Lab%203/ollama/test.py
+
+We revised the `ollama_web_app.py` and tested the interaction by running `test.py` in ollama folder
+```bash
+cd ollama
+source ollama_venv/bin/activate
+python3 test.py
+```
 <p align="center">
   <a href="https://www.youtube.com/watch?v=MWF14AGxWc4" target="_blank">
     <img src="https://img.youtube.com/vi/MWF14AGxWc4/hqdefault.jpg" alt="Watch the demo" width="600">
