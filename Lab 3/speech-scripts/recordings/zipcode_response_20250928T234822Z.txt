@@ -1,0 +1,6 @@
+timestamp: 20250928T234822Z
+prompt: Please say your five-digit ZIP code now. Speak each digit clearly after the beep.
+file: ./recordings/zipcode_response_20250928T234822Z.wav
+duration_s: 6
+sample_rate: 16000
+channels: 1

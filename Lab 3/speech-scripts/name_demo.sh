@@ -1,0 +1,1 @@
+echo "My name is Jully Li" | festival --tts
