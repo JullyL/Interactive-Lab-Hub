@@ -511,10 +511,28 @@ From these trials, we would like to expand the system with built-in repair strat
 
 ### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
 
-\*\**your answer here*\*\*
+The system can be used to build a dataset by recording voice interaction logs and dialogue history during gameplay. These records would include whether the user responded with a simple yes or no or gave an unexpected input. When unknown responses occur, the data can capture how the system continues to interact and whether it adapts effectively. Additionally, our system would note error cases, such as failures in speech recognition, and situations where ethical or privacy restrictions prevent the bot from proceeding. Collecting information on both the devices and the users’ waiting response times would provide additional insights into the pacing and user experience.
 
+In addition to the current sensor, we would like to add gesture tracking for accessibility, enabling participants from users who cannot speak and prefer to respond through physical movement. Another solution would be to add a distance sensor to allow the bot to detect when a user is nearby and automatically launch the interaction, creating a more seamless experience. 
 
+Data log sample in the terminal:
+![log](proj_docs/log-1.jpg)
+![log](proj_docs/log-2.jpg)
+![log](proj_docs/log-3.png)
+![log](proj_docs/log-4.jpg)
 
+### Final Video
+Link: https://youtu.be/ifh_CUce91s
 
+Source Code: https://github.com/siruiii/Interactive-Lab-Hub/blob/b5eda3af5a67afadb8f24a4182c2ffeda0704dcc/Lab%203/bot.py
 
+**Contribution Acknowledgment**
+Everyone in the team has made equal contributions to this project.
 
+Sirui Wang: technical implementation, final report write-up
+
+Jully Li: video shooting and editing, storyboarding, UI design, physical enclosure.
+
+Feier Su: Help with system’s physical prototyping, UI design, final report write-up.
+
+Weicong Hong: LLM system prompt design & iteration, UI design, final report write-up.
