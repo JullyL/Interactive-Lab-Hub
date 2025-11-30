@@ -20,6 +20,13 @@ This project will be done by **Jully Li (hl2568), Weicong Hong (wh528), Feier Su
 
 ### Big Idea
 
+#### Digital Fortune Cookie Installation — Community Message Timeline
+The installation creates an intimate, collective experience of shared reflections, hopes, humor, and everyday thoughts. Each fortune becomes a micro-conversation across the Cornell Tech community.
+
+<details>
+<summary><strong>Previous Object Journal Dock Idea (click to expand)</strong></summary>
+### Big Idea
+
 #### Object Journal Dock — Tangible Memory Device
 **What We’re Building**
 - An RFID-based interactive device that recognizes physical objects. When an object is placed on the dock, the device displays past journals or recorded feelings linked to it.
@@ -53,3 +60,39 @@ The project can pivot to use a QR code-based recognition system. Generate Unique
 - SparkFun Qwiic Red and Green Buttons
 - RFID Reader
 - RFID Tags
+</details>
+
+**NOTE:** We pivoted our project from the <u>Object Journal Dock</u> to the <u>Digital Fortune Cookie Installation</u>, but the core interaction concept remains the same: a physical trigger (previously RFID-tagged objects, now QR-coded capsules) links to digital content, which users can view and contribute to over time. The system still creates an evolving timeline of messages, preserving the idea of shared, persistent interaction, while shifting from personal journaling to a playful, communal experience.
+
+**What We’re Building**
+- An interactive installation where visitors receive a physical fortune cookie capsule containing a unique QR code.
+- Scanning the QR opens a mobile webpage where visitors read a prewritten message and contribute a reply.
+- Replies form a living message timeline, growing each time the QR is scanned.
+- A Raspberry Pi with an external screen displays animations, reveals fortunes, and shows the evolving timeline in real time
+
+**Fall-back Plan**
+If network or QR scanning reliability becomes an issue, we will pivot to:
+- A single QR code linking to a random message generator
+- Local-only Pi operation where users interact directly through the Pi camera or on-screen input without phone integration.
+
+### Timeline
+
+**November 15** - Finalize device concept & define recognition logic, user flow: Decide detection approach and explore recognition logic
+
+**November 30** - Implement QR generator; build backend structure; create initial Pi display mockup; 3D Printing of Physical Fortune Cookie; Design Fortune Cookie Capsule Vending Machine.
+
+**December 1** - Functional check-off: Fully working demo: object recognized, initial message displayed, new entries recordable
+
+**December 3** - End-to-end working prototype: Get capsule → scan → read → reply → Pi updates
+
+**December 8** - Final Presentation: Organize everything into a coherent presentation; complete README
+
+**December 15** - Write-up and documentation
+
+### Parts Needed
+- Raspberry Pi
+- External Monitor
+- USB Camera with Microphone
+- Physical Capsules / Fortune Cookie Holders
+- Printed Unique QR Codes
+- Phones (Scanning the QR Codes)
