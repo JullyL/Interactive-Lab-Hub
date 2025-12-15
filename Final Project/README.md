@@ -176,6 +176,15 @@ Final thermal printer setup with pre-cut holes for printing fortune quotes.
   <em>Final Set-up</em>
 </p>
 
+#### Interation Flow
+1. The visitor rotates the knob on the vending machine.
+2. A fortune cookie capsule drops from the top of the machine to the exit at the bottom.
+3. The visitor picks up the capsule from the exit.
+4. The visitor opens the capsule and finds a printed QR code inside.
+5. The QR code is scanned using a USB camera connected to the Raspberry Pi.
+6. The system recognizes the QR code and retrieves the corresponding fortune quote.
+7. The thermal printer automatically prints out the fortune quote.
+8. The visitor takes the printed fortune with the cookie as a physical takeaway.
 
 ## Documentation of Design Process
 ### Storyboard
@@ -279,6 +288,7 @@ Furthermore, we were interested in exploring how the project could be extended. 
 - Designed the physical enclosure of vending machine
 - Final set-up
 - Storyboarding
+- Sketch
 
 ### Sirui
 - Technical implementation
