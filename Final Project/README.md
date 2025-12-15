@@ -63,8 +63,7 @@ The installation creates a shared, communal experience rooted in chance, ritual,
 - The scan triggers the system to automatically retrieve the corresponding fortune.
 - A Raspberry Pi controls an external screen for code scanning and a thermal printer that instantly prints out the fortune.
 
-**Fall-back Plan**
-If network or QR scanning reliability becomes an issue, we will pivot to:
+**Fall-back Plan** - If network or QR scanning reliability becomes an issue, we will pivot to:
 - A single QR code linking to a random message generator
 - Local-only Pi operation where users interact directly through the Pi camera or on-screen input without phone integration.
 
@@ -111,7 +110,10 @@ We prepared **56 unique QR codes** and printed them on paper. A black background
 #### Capsule Vending Machine
 We followed the instruction from this tutorial (https://www.youtube.com/shorts/n1d6INIUhoI) to build the internal structure of our capsule vending system.
 
-@Sophie Internal Structure
+<p align="center">
+  <img src="proj_docs/internal structure.png" width="55%"><br>
+  <em>Internal Structure of Vending Machine</em>
+</p>
 
 We used pins to control and guide the capsule’s dropping path inside the vending box. This would guide the capsule to drop at the designated area at the exit. 
 
@@ -239,7 +241,9 @@ Two major components were used for our final installation. Fortune Cookie which 
 [![Demo Video](https://img.youtube.com/vi/9xvojg6bTDs/hqdefault.jpg)](https://youtube.com/shorts/9xvojg6bTDs?feature=share)
 
 ### User Testing
-On the demo day, lots of people 
+On the demo day, visitors rotate the vending machine, retrieve a capsule, scan the QR code, and observe the printed fortune. We evaluated how intuitive the overall flow was, how easily visitors understood the scanning process, and how reliably the printer responded. 
+
+Watching first-time users interact with the device helped us identify moments of hesitation, such as QR code positioning for the camera and occasional issues with capsule dispensing. Here are two examples we recorded:
 
 #### Testing 1
 [![Testing 1](https://img.youtube.com/vi/vwP-Ya5EZXY/hqdefault.jpg)](https://youtube.com/shorts/vwP-Ya5EZXY?feature=share)
@@ -247,14 +251,25 @@ On the demo day, lots of people
 #### Testing 2
 [![Testing 2](https://img.youtube.com/vi/JZvPd0sey-k/hqdefault.jpg)](https://youtube.com/shorts/JZvPd0sey-k?feature=share)
 
-## Reflections on Process
+#### User Feedback
+- Visitors found the capsule vending interaction playful and engaging.
+- The rotating knob was intuitive, and most users understood how to get a capsule without instructions.
+- Some users were unsure how close to hold the QR code to the camera during scanning.
+- The printed fortune was well received and felt satisfying as a physical takeaway.
+- A few users experienced the capsule getting stuck and needed to rotate the knob again.
+- Visitors enjoyed the element of randomness and surprise in receiving a fortune.
 
+## Reflections on Process
+Through testing and the demo, we identified several areas for improvement. The QR code scanning experience could be improved by further testing the camera sensitivity. During the demo, the camera sometimes needed extra time to detect the QR code. Providing a simple user-facing indicator could help users understand whether the camera is properly focused.
+
+We also observed that the capsule vending mechanism occasionally became stuck during operation. In these cases, users needed to apply additional force to the knob to dispense a capsule. With more time, we would explore a more interactive and reliable way to guide the capsule out of the machine. This could include using sensors or simple actuation mechanisms to improve consistency and overall usability.
+
+Furthermore, we were interested in exploring how the project could be extended. It would be interesting to investigate additional ways for visitors to interact with the fortune quotes in more meaningful ways. This could help deepen engagement and encourage reflection beyond the initial interaction.
 
 
 ## Group Work Distribution
 ### Jully
 - Completed README.md
-- Asisted in designing the physical enclosure
 - Poster Design
 - Ideation
 - Designed Survey and collected data 
